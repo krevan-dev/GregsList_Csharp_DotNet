@@ -41,6 +41,8 @@ namespace GL_Final
       services.AddTransient<CarsService>();
       services.AddTransient<HousesRepository>();
       services.AddTransient<HousesService>();
+      services.AddTransient<JobsRepository>();
+      services.AddTransient<JobsService>();
     }
 
     private void ConfigureCors(IServiceCollection services)
