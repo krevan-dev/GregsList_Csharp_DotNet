@@ -39,6 +39,8 @@ namespace GL_Final
       // ANCHOR TRANSIENTS BELOW
       services.AddTransient<CarsRepository>();
       services.AddTransient<CarsService>();
+      services.AddTransient<HousesRepository>();
+      services.AddTransient<HousesService>();
     }
 
     private void ConfigureCors(IServiceCollection services)

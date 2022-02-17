@@ -23,7 +23,8 @@ CREATE TABLE houses(
   bed INT NOT NULL,
   bath INT NOT NULL,
   sqft INT NOT NULL,
-  location VARCHAR(255) NOT NULL
+  location VARCHAR(255) NOT NULL,
+  price INT NOT NULL
 ) DEFAULT charset utf8 COMMENT 'GL Houses';
 CREATE TABLE jobs(
   id INT NOT NULL primary key AUTO_INCREMENT,
@@ -32,20 +33,3 @@ CREATE TABLE jobs(
   empType VARCHAR(255) NOT NULL,
   location VARCHAR(255) NOT NULL
 ) DEFAULT charset utf8 COMMENT 'GL Jobs';
-SELECT
-  *
-FROM
-  cars;
-INSERT INTO
-  cars (year, make, model, price, color, body)
-VALUES
-  (
-    2007,
-    "Pizza",
-    "Planet",
-    1000,
-    "Yellow",
-    "Pizza Rocket Ship"
-  );
-SELECT
-  LAST_INSERT_ID();
